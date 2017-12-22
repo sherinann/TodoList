@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+
+<!--[if lt IE 7]>      <html lang="en" ng-app="toDoList" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="toDoList" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="toDoList" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="toDoList" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ToDo List</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+ 
+</head>
+<body data-ng-controller="toDoListCtrl">
+  <div class="container">
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+      <li role="presentation" class="active" ng-model="home"><a  id="id02" ng-click="home()">home</a></li>
+  
+    <li role="presentation" class="active"  ng-model="signInOption"><a  id="id01" ng-click="signIn()" >sign in</a></li>
+  <li role="presentation" class="active" ng-model="signUpOption"><a  id="id02" ng-click="signUp()">sign up</a></li>
+  
+        <!--<li class="loginclass"><a><span class="glyphicon glyphicon-user"> sign in</span></a></li>-->
+  
+  </ul>
+
+</div>
+ <!-- <ul class="menu">
+      <li><a href="#tasks">tasks</a></li>
+    <li><a href="#addTask">addTask</a></li>
+  </ul>-->
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+
+  <script src="tasks/tasks.js"></script>
+  <script src="addTask/addTask.js"></script>
+  <script src="signin/signin.js"></script>
+  <script src="signin/signout.js"></script>
+  <script src="signup/signup.js"></script>
+</body>
+</html>

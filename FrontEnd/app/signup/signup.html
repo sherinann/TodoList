@@ -1,0 +1,36 @@
+<div class="container ">
+
+    <div class= " col-xs-5 col-md-offset-4" >
+       
+ <form class="form-signin">
+     <h2 class="form-signin-heading">
+         please sign up
+     </h2>
+     <label for="inputUser" class="sr-only">username</label>
+     <input id="inputUser" class="form-control" ng-model="username" placeholder="username" required="" autofocus="">
+     <br>
+     <label for="inputPassword" class="sr-only">password</label>
+     <input type="password" id="inputPassword" class="form-control" ng-model="password" placeholder="password" required="" autofocus="">
+     <br>
+     <label for="inputRePassword" class="sr-only">re-enter password</label>
+ <input type="password" id="inputRePassword" class="form-control" ng-model="rpassword" placeholder="re-enter password" required="" autofocus="">
+ <br>
+
+ <br><div class="checkbox">
+         <label>
+             <input type="checkbox" ng-model="checkbox" value="remember-me">Remember me
+         </label>
+     </div>
+     <button class="btn btn-lg btn-primary btn-block"  ng-model="signUp" data-ng-click="signUp()" type="submit">sign up</button>
+     <br>
+     <br>
+     <br>
+     <a  ><button data-ng-model="canelbtn" class="btn btn-primary"  type="submit">cancel</button></a>
+ </form>
+    </div>
+
+
+  
+
+    
+ 

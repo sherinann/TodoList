@@ -1,0 +1,40 @@
+
+<div class="container" style="margin: 4%; display:block">
+
+
+    <div class="container">
+           
+    
+        <div class="row">
+    
+                    <div ng-repeat= "t in taskList">
+                       <!-- <div class="col-md-8" >-->
+
+                             <div class="panel panel-primary">
+                        <div class="panel panel heading" align="center" > <b>{{t.task_name}}<b></a></div>
+                            <div class="panel panel heading" align="center" > <b>{{t.date}}<b></a></div>
+                        <div class="panel-body" align="center" > <b>created by {{t.username}}<b></a></div>
+                        <div class="panel-body" align="center" > <b>status: {{t.status}}<b></a></div>
+                        <div class="panel-body" align="center" > <b>label: {{t.label}}<b></a></div>
+                        
+                  
+                    </div>
+                    <!--<div>-->
+                    <br>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="container" style="align-content:center">
+    <a><button data-ng-model="addtask"  class="btn btn-primary" type="submit" ng-click="addTaskFunction()">Add Task</button></a>
+
+</div>
